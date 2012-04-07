@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cpu">
+      <UniqueIdentifier>{a0bb957e-b341-458d-a4e8-a8cabcbe15f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fpu">
+      <UniqueIdentifier>{9b976438-8d7c-4bdc-b28e-8481d8f3e3c7}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="cpu\Headers">
+      <UniqueIdentifier>{1d08813d-ca1a-4f4e-85a8-4cbd5a5b3c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fpu\Headers">
+      <UniqueIdentifier>{b8719bc4-c300-43e9-a86c-1a4e709baca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{102e1225-b68f-440d-9908-d4df490eb0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\Headers">
+      <UniqueIdentifier>{50ad1ece-16cd-43f1-9af5-47b89f1406a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\access.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\arith8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\arith16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\arith32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\bcd.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\bit.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\cpu.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\ctrl_xfer_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\ctrl_xfer8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\ctrl_xfer16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\ctrl_xfer32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\data_xfer8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\data_xfer16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\data_xfer32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\exception.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\fetchdecode.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\flag_ctrl.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\flag_ctrl_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\init.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\io.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\io_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\lazy_flags.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\logical8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\logical16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\logical32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\mult8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\mult16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\mult32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\paging.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\proc_ctrl.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\protect_ctrl.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\protect_ctrl_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\resolve16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\resolve32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\segment_ctrl.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\segment_ctrl_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\shift8.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\shift16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\shift32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\soft_int.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\stack_pro.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\stack16.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\stack32.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\string.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\tasking.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu\vm8086.cpp">
+      <Filter>cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\div_small.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\div_Xsig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\errors.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_arith.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_aux.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_entry.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_etc.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_tags.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu_trig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\load_store.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\mul_Xsig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\poly_2xm1.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\poly_atan.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\poly_l2.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\poly_sin.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\poly_tan.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\polynom_Xsig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_add_sub.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_compare.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_constant.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_convert.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_divide.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_ld_str.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_mul.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_norm.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_round.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_u_add.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_u_div.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_u_mul.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\reg_u_sub.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\round_Xsig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\shr_Xsig.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\wm_shrx.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\wm_sqrt.c">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\fpu.cpp">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="fpu\wmFPUemu_glue.cpp">
+      <Filter>fpu</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\memory.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpu\cpu.h">
+      <Filter>cpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu\lazy_flags.h">
+      <Filter>cpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\control_w.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\exception.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\fpu_asm.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\fpu_emu.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\fpu_proto.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\fpu_system.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\poly.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\reg_constant.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\status_w.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fpu\version.h">
+      <Filter>fpu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="bochs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="bxversion.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="state_file.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory.h">
+      <Filter>memory\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

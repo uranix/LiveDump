@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6172EB4-3A81-42D1-9C89-9E2F1D9D1CD0}</ProjectGuid>
+    <RootNamespace>dump_loader</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>d:\dump_loader\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>d:\dump_loader\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu\access.cpp" />
+    <ClCompile Include="cpu\arith16.cpp" />
+    <ClCompile Include="cpu\arith32.cpp" />
+    <ClCompile Include="cpu\arith8.cpp" />
+    <ClCompile Include="cpu\bcd.cpp" />
+    <ClCompile Include="cpu\bit.cpp" />
+    <ClCompile Include="cpu\cpu.cpp" />
+    <ClCompile Include="cpu\ctrl_xfer16.cpp" />
+    <ClCompile Include="cpu\ctrl_xfer32.cpp" />
+    <ClCompile Include="cpu\ctrl_xfer8.cpp" />
+    <ClCompile Include="cpu\ctrl_xfer_pro.cpp" />
+    <ClCompile Include="cpu\data_xfer16.cpp" />
+    <ClCompile Include="cpu\data_xfer32.cpp" />
+    <ClCompile Include="cpu\data_xfer8.cpp" />
+    <ClCompile Include="cpu\exception.cpp" />
+    <ClCompile Include="cpu\fetchdecode.cpp" />
+    <ClCompile Include="cpu\flag_ctrl.cpp" />
+    <ClCompile Include="cpu\flag_ctrl_pro.cpp" />
+    <ClCompile Include="cpu\init.cpp" />
+    <ClCompile Include="cpu\io.cpp" />
+    <ClCompile Include="cpu\io_pro.cpp" />
+    <ClCompile Include="cpu\lazy_flags.cpp" />
+    <ClCompile Include="cpu\logical16.cpp" />
+    <ClCompile Include="cpu\logical32.cpp" />
+    <ClCompile Include="cpu\logical8.cpp" />
+    <ClCompile Include="cpu\mult16.cpp" />
+    <ClCompile Include="cpu\mult32.cpp" />
+    <ClCompile Include="cpu\mult8.cpp" />
+    <ClCompile Include="cpu\paging.cpp" />
+    <ClCompile Include="cpu\proc_ctrl.cpp" />
+    <ClCompile Include="cpu\protect_ctrl.cpp" />
+    <ClCompile Include="cpu\protect_ctrl_pro.cpp" />
+    <ClCompile Include="cpu\resolve16.cpp" />
+    <ClCompile Include="cpu\resolve32.cpp" />
+    <ClCompile Include="cpu\segment_ctrl.cpp" />
+    <ClCompile Include="cpu\segment_ctrl_pro.cpp" />
+    <ClCompile Include="cpu\shift16.cpp" />
+    <ClCompile Include="cpu\shift32.cpp" />
+    <ClCompile Include="cpu\shift8.cpp" />
+    <ClCompile Include="cpu\soft_int.cpp" />
+    <ClCompile Include="cpu\stack16.cpp" />
+    <ClCompile Include="cpu\stack32.cpp" />
+    <ClCompile Include="cpu\stack_pro.cpp" />
+    <ClCompile Include="cpu\string.cpp" />
+    <ClCompile Include="cpu\tasking.cpp" />
+    <ClCompile Include="cpu\vm8086.cpp" />
+    <ClCompile Include="fpu\div_small.c" />
+    <ClCompile Include="fpu\div_Xsig.c" />
+    <ClCompile Include="fpu\errors.c" />
+    <ClCompile Include="fpu\fpu.cpp" />
+    <ClCompile Include="fpu\fpu_arith.c" />
+    <ClCompile Include="fpu\fpu_aux.c" />
+    <ClCompile Include="fpu\fpu_entry.c" />
+    <ClCompile Include="fpu\fpu_etc.c" />
+    <ClCompile Include="fpu\fpu_tags.c" />
+    <ClCompile Include="fpu\fpu_trig.c" />
+    <ClCompile Include="fpu\load_store.c" />
+    <ClCompile Include="fpu\mul_Xsig.c" />
+    <ClCompile Include="fpu\polynom_Xsig.c" />
+    <ClCompile Include="fpu\poly_2xm1.c" />
+    <ClCompile Include="fpu\poly_atan.c" />
+    <ClCompile Include="fpu\poly_l2.c" />
+    <ClCompile Include="fpu\poly_sin.c" />
+    <ClCompile Include="fpu\poly_tan.c" />
+    <ClCompile Include="fpu\reg_add_sub.c" />
+    <ClCompile Include="fpu\reg_compare.c" />
+    <ClCompile Include="fpu\reg_constant.c" />
+    <ClCompile Include="fpu\reg_convert.c" />
+    <ClCompile Include="fpu\reg_divide.c" />
+    <ClCompile Include="fpu\reg_ld_str.c" />
+    <ClCompile Include="fpu\reg_mul.c" />
+    <ClCompile Include="fpu\reg_norm.c" />
+    <ClCompile Include="fpu\reg_round.c" />
+    <ClCompile Include="fpu\reg_u_add.c" />
+    <ClCompile Include="fpu\reg_u_div.c" />
+    <ClCompile Include="fpu\reg_u_mul.c" />
+    <ClCompile Include="fpu\reg_u_sub.c" />
+    <ClCompile Include="fpu\round_Xsig.c" />
+    <ClCompile Include="fpu\shr_Xsig.c" />
+    <ClCompile Include="fpu\wmFPUemu_glue.cpp" />
+    <ClCompile Include="fpu\wm_shrx.c" />
+    <ClCompile Include="fpu\wm_sqrt.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="memory\memory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bochs.h" />
+    <ClInclude Include="bxversion.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="cpu\cpu.h" />
+    <ClInclude Include="cpu\lazy_flags.h" />
+    <ClInclude Include="fpu\control_w.h" />
+    <ClInclude Include="fpu\exception.h" />
+    <ClInclude Include="fpu\fpu_asm.h" />
+    <ClInclude Include="fpu\fpu_emu.h" />
+    <ClInclude Include="fpu\fpu_proto.h" />
+    <ClInclude Include="fpu\fpu_system.h" />
+    <ClInclude Include="fpu\poly.h" />
+    <ClInclude Include="fpu\reg_constant.h" />
+    <ClInclude Include="fpu\status_w.h" />
+    <ClInclude Include="fpu\version.h" />
+    <ClInclude Include="memory\memory.h" />
+    <ClInclude Include="state_file.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
